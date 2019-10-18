@@ -1,9 +1,9 @@
 <template>
-  <v-container>
-            <v-card
-                class="mx-auto mb-3"
-                max-width="100%"
-            >
+    <v-container>
+        <v-card
+            class="mx-auto mb-3"
+            max-width="100%"
+        >
             <div class="pointer" @click="view = !view">
                 <v-img
                     :src="postdata.image"
@@ -40,7 +40,7 @@
                         >
                         Добавить
                         </v-btn>
-                    <v-divider></v-divider>
+                        <v-divider></v-divider>
                     </v-form>
                     <v-list class="mt-5">
                     <h3>Комментарии</h3>
@@ -75,7 +75,7 @@
                 </v-btn>
             </v-card-actions>
         </v-card>
-  </v-container>
+    </v-container>
 </template>
 
 <script>

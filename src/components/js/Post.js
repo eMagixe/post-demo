@@ -35,7 +35,7 @@ export default {
         },
         /**
          * Удаление комментария
-         * comment {object} 
+         * comment {object}
          */
         delComment (comment) {
             let index = this.postdata.comments.indexOf(comment);

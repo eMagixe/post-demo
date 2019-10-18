@@ -1,11 +1,13 @@
 <template>
     <v-container>
-            <v-alert type="success" v-if="status">
+        <v-alert type="success" v-if="status">
             <v-progress-circular
             indeterminate
             color="while"
             class="mr-5"
-            ></v-progress-circular>Сохранение</v-alert>
+            ></v-progress-circular>
+            Сохранение
+        </v-alert>
         <div v-for="post in posts" :key="post.id">
             <post :postdata="post"></post>
         </div>
