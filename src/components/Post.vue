@@ -65,7 +65,6 @@
                 <editable :post='postdata'></editable>
                 <v-btn @click="remove(postdata)" text>Удалить</v-btn>
             </v-card-actions>
-
         </v-card>
   </v-container>
 </template>

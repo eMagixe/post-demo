@@ -40,11 +40,15 @@ export default {
                 ]
             }
         ],
+        isSave: false
     },
     getters: {
         getAll: (state) => {
             return state.posts.reverse()
         },
+        getStatus: (state) => {
+            return state.isSave
+        }
     },
     mutations: {
         remove (state, post) {
@@ -59,6 +63,14 @@ export default {
                 comments: []
             }
             state.posts.push(post)
+        },
+        saving (state) {
+            state.isSave = true
+        },
+        saved (state) {
+            setTimeout(() => {
+                state.isSave = false
+            },1000)
         }
     }
 }

@@ -32,7 +32,7 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="blue darken-1" text @click="dialog = false">Закрыть</v-btn>
+          <v-btn color="blue darken-1" text @click="setStatus">Сохранить</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -40,12 +40,25 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
   export default {
     props: {
         post: Object
     },
     data: () => ({
       dialog: false,
-    })
+    }),
+    methods: {
+        ...mapMutations({
+            saving: 'saving',
+            saved: 'saved'
+        }),
+        setStatus () {
+            this.dialog = false
+            this.saving()
+            this.saved()
+            console.log('saved')
+        }
+    }
   }
 </script>
