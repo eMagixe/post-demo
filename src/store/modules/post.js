@@ -57,9 +57,9 @@ export default {
         },
         create (state) {
             const post = {
-                title: 'Заголовок',
-                description: 'Описание',
-                content: 'Полный текст статьи',
+                title: '',
+                description: '',
+                content: '',
                 comments: []
             }
             state.posts.push(post)

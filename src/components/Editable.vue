@@ -2,7 +2,10 @@
   <v-row>
     <v-dialog v-model="dialog">
       <template v-slot:activator="{ on }" >
-        <v-btn class="ml-3" text v-on="on">Редактировать</v-btn>
+        <v-btn class="ml-3" text v-on="on">
+            <v-icon middle left color="blue darken-2">mdi-pencil</v-icon>
+            Редактировать
+            </v-btn>
       </template>
       <v-card>
         <v-card-title>

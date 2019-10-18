@@ -1,16 +1,16 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <v-app-bar app class="primary" dark>
         <v-toolbar-title class="headline text-uppercase">
             <span>Post</span>
             <span class="font-weight-light">Demo for gibrit.io</span>
         </v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-btn class="mx-2" small outlined fab>
-            <v-icon @click="create" dark>mdi-plus</v-icon>
+        <v-btn @click="create" class="mx-2" small outlined>
+            <v-icon left dark>mdi-plus</v-icon>
+            Добавить
         </v-btn>
     </v-app-bar>
-
     <v-content>
       <ListPost/>
     </v-content>
@@ -32,3 +32,9 @@ export default {
     }
 }
 </script>
+
+<style>
+.pointer {
+    cursor: pointer;
+}
+</style>
