@@ -18,19 +18,8 @@
 </template>
 
 <script>
-import ListPost from './components/ListPost';
-
-export default {
-    name: 'App',
-    components: {
-        ListPost,
-    },
-    methods: {
-        create() {
-            this.$store.commit('create')
-        }
-    }
-}
+import App from './components/js/App'
+export default App
 </script>
 
 <style>

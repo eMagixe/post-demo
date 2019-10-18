@@ -43,25 +43,6 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
-  export default {
-    props: {
-        post: Object
-    },
-    data: () => ({
-      dialog: false,
-    }),
-    methods: {
-        ...mapMutations({
-            saving: 'saving',
-            saved: 'saved'
-        }),
-        setStatus () {
-            this.dialog = false
-            this.saving()
-            this.saved()
-            console.log('saved')
-        }
-    }
-  }
+import Editable from './js/Editable'
+export default Editable
 </script>

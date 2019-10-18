@@ -13,18 +13,6 @@
 </template>
 
 <script>
-import post from './Post'
-import { mapGetters } from 'vuex'
-
-export default {
-    components: {
-        post,
-    },
-    computed: {
-        ...mapGetters({
-            posts: 'getAll',
-            status: 'getStatus'
-        })
-    }
-};
+import ListPost from './js/ListPost'
+export default ListPost
 </script>
