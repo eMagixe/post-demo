@@ -5,6 +5,10 @@
                 max-width="100%"
             >
             <div class="pointer" @click="view = !view">
+                <v-img
+                    :src="postdata.image"
+                    height="400px"
+                ></v-img>
                 <v-card-title>
                     <h4>{{ postdata.title }}</h4>
                 </v-card-title>

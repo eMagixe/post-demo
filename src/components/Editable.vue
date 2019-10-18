@@ -18,6 +18,9 @@
                 <v-text-field label="Заголовок" v-model="post.title" required></v-text-field>
               </v-col>
               <v-col cols="12" sm="12" md="12">
+                <v-text-field label="Фото" v-model="post.image" required></v-text-field>
+              </v-col>
+              <v-col cols="12" sm="12" md="12">
                 <v-text-field label="Краткое описание" v-model="post.description"></v-text-field>
               </v-col>
               <v-col cols="12" sm="12" md="12">
@@ -25,7 +28,7 @@
                   label="Полный текст статьи"
                   auto-grow
                   filled
-                  rows="12"
+                  rows="7"
                   v-model="post.content"
                   required
                 ></v-textarea>
