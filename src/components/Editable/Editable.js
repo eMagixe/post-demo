@@ -2,8 +2,7 @@ import { mapMutations } from 'vuex'
 
 export default {
     props: {
-        post: Object,
-        dialog: Boolean
+        post: Object
     },
     methods: {
         /**
@@ -18,6 +17,7 @@ export default {
          * разделена на жизненные циклы по статусам
          */
         setStatus () {
+            this.post.open = false
             this.dialog = false
             this.saving()
             this.saved()

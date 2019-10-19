@@ -63,7 +63,7 @@
             </v-card-text>
             <v-divider></v-divider>
             <v-card-actions>
-                <editable :post='postdata' :dialog="postdata.open"></editable>
+                <editable :post='postdata'></editable>
                 <div v-if="!view">
                     <v-icon large color="blue darken-2">mdi-message-text</v-icon>
                     {{ postdata.comments.length }}

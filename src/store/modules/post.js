@@ -37,6 +37,7 @@ export default {
         create (state) {
             const post = {
                 title: '',
+                image: 'http://saveabandonedbabies.org/wp-content/uploads/2015/08/default.png',
                 description: '',
                 content: '',
                 open: true,

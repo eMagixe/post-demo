@@ -1,6 +1,6 @@
 <template>
     <v-row>
-        <v-dialog v-model="dialog">
+        <v-dialog v-model="post.open">
             <template v-slot:activator="{ on }" >
                 <v-btn class="ml-3" text v-on="on">
                     <v-icon middle left color="blue darken-2">mdi-pencil</v-icon>
@@ -38,7 +38,7 @@
                 </v-card-text>
                 <v-card-actions>
                     <v-spacer></v-spacer>
-                    <v-btn color="blue darken-1" text @click="dialog=!dialog">Отмена</v-btn>
+                    <v-btn color="blue darken-1" text @click="post.open  = !post.open">Отмена</v-btn>
                     <v-btn color="blue darken-1" text @click="setStatus">Сохранить</v-btn>
                 </v-card-actions>
             </v-card>
