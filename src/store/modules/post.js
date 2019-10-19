@@ -8,23 +8,24 @@ export default {
     getters: {
         /**
          * Получение статей в обратном порядке
-         * state {object}
          */
         getAll: (state) => {
             return state.posts.reverse()
         },
         /**
          * Получение статуса
-         * state {object}
          */
         getStatus: (state) => {
             return state.isSave
-        }
+        },
+        /**
+         * Получение статуса модального окна
+         */
     },
     mutations: {
         /**
         * Удаление статьи
-        * state {object}, post {object}
+            post {object}
          */
         remove (state, post) {
             let index = state.posts.indexOf(post);
@@ -32,20 +33,19 @@ export default {
         },
         /**
          *Создание шаблона статьи
-         * state {object}
          */
         create (state) {
             const post = {
                 title: '',
                 description: '',
                 content: '',
+                open: true,
                 comments: []
             }
             state.posts.push(post)
         },
         /**
          * Устанока статуса сохранения
-         * state {object}
          */
         saving (state) {
             state.isSave = true
@@ -53,7 +53,6 @@ export default {
         /**
          * Установка статуса окончания сохранения
          * для визуализаци через 1 секунду
-         * state {object}
          */
         saved (state) {
             setTimeout(() => {

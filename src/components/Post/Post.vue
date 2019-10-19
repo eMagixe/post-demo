@@ -63,7 +63,7 @@
             </v-card-text>
             <v-divider></v-divider>
             <v-card-actions>
-                <editable :post='postdata'></editable>
+                <editable :post='postdata' :dialog="postdata.open"></editable>
                 <div v-if="!view">
                     <v-icon large color="blue darken-2">mdi-message-text</v-icon>
                     {{ postdata.comments.length }}
@@ -78,7 +78,4 @@
     </v-container>
 </template>
 
-<script>
-import Post from './js/Post'
-export default  Post
-</script>
+<script src="./Post.js"></script>

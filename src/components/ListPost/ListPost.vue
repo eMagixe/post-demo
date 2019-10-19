@@ -14,7 +14,4 @@
     </v-container>
 </template>
 
-<script>
-import ListPost from './js/ListPost'
-export default ListPost
-</script>
+<script src="./ListPost.js"></script>

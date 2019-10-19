@@ -18,8 +18,22 @@
 </template>
 
 <script>
-import App from './components/js/App'
-export default App
+import ListPost from './components/ListPost/ListPost.vue';
+
+export default {
+    name: 'App',
+    components: {
+        ListPost,
+    },
+    methods: {
+        /**
+         * Создание и добавление пустой статьи в хранилище
+         */
+        create() {
+            this.$store.commit('create')
+        }
+    }
+}
 </script>
 
 <style>

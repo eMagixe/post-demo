@@ -1,4 +1,4 @@
-import post from '../Post'
+import post from '../Post/Post.vue'
 import { mapGetters } from 'vuex'
 
 export default {

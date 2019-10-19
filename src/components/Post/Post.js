@@ -1,4 +1,4 @@
-import editable from '../Editable'
+import editable from '../Editable/Editable.vue'
 import { mapMutations } from 'vuex'
 
 export default {

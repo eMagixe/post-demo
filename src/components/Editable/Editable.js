@@ -2,18 +2,16 @@ import { mapMutations } from 'vuex'
 
 export default {
     props: {
-        post: Object
+        post: Object,
+        dialog: Boolean
     },
-    data: () => ({
-      dialog: false,
-    }),
     methods: {
         /**
          * Добавление методов мутаторов в компонент
          */
         ...mapMutations({
             saving: 'saving',
-            saved: 'saved'
+            saved: 'saved',
         }),
         /**
          * Установка статуса сохранения, закрытие окна диалога
@@ -23,6 +21,6 @@ export default {
             this.dialog = false
             this.saving()
             this.saved()
-        }
+        },
     }
 }

@@ -38,6 +38,7 @@
                 </v-card-text>
                 <v-card-actions>
                     <v-spacer></v-spacer>
+                    <v-btn color="blue darken-1" text @click="dialog=!dialog">Отмена</v-btn>
                     <v-btn color="blue darken-1" text @click="setStatus">Сохранить</v-btn>
                 </v-card-actions>
             </v-card>
@@ -45,7 +46,4 @@
     </v-row>
 </template>
 
-<script>
-import Editable from './js/Editable'
-export default Editable
-</script>
+<script src="./Editable.js"></script>
