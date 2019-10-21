@@ -3,7 +3,7 @@
     <v-app-bar app class="primary" dark>
         <v-toolbar-title class="headline text-uppercase">
             <span>Post</span>
-            <span class="font-weight-light">Demo for gibrit.io</span>
+            <span class="font-weight-light">Demo</span>
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-btn @click="create" class="mx-2" small outlined>
